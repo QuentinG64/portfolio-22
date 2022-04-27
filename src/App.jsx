@@ -1,11 +1,19 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Projects from "./components/Projects";
+import HomePage from "./components/HomePage";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+
 function App() {
   return (
-    <div className="flex items-center justify-center w-screen h-screen text-xl text-white bg-slate-500 text-shadow-md">
-      <p>
-        Ce template est bien configuré pour vos applications front-end avec Vite
-        et Tailwind
-      </p>
+    <div className="bg-bg-1 h-screen w-screen">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }

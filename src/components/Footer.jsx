@@ -1,0 +1,28 @@
+import React from "react";
+
+const Footer = () => {
+  return (
+    <div className="gap-5 flex mb-3 justify-center fixed bottom-0 left-[50%] right-[25%] translate-x-[-50%]">
+      <img
+        src="../src/assets/images/Github.png"
+        height="28"
+        width="28"
+        alt="github"
+      />
+      <img
+        src="../src/assets/images/Linkedin.png"
+        height="28"
+        width="28"
+        alt="Linkedin"
+      />
+      <img
+        src="../src/assets/images/Discord.png"
+        height="28"
+        width="28"
+        alt="Discord"
+      />
+    </div>
+  );
+};
+
+export default Footer;
