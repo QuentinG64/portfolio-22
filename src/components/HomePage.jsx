@@ -12,10 +12,6 @@ import ButtonContact from "./ButtonContact";
 const HomePage = () => {
   const particlesInit = async (main) => {
     console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
 
@@ -33,8 +29,9 @@ const HomePage = () => {
 
   return (
     <div className="w-screen">
-      <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10">
-        <Switch />
+      <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-white font-reg">
+        <Switch onClick={handleLinked} />
+        Click me!
       </div>
       <Particles
         id="tsparticles"
