@@ -13,9 +13,16 @@ module.exports = {
         sbold: ["Nunito-Sembold"],
       },
       colors: {
-        "bg-1": "#272727",
+        "bg-1": "#1D1D1D",
         "main-1": "#E8C64C",
         "main-2": "#FFF",
+        "f-stop": "#0F2027",
+        "s-stop": "#203A43",
+        "t-stop": "#2C5364",
+      },
+      backgroundImage: {
+        homeBg: "url('./assets/images/bg_main.jpeg')",
+        card: "url('/public/assets/global/cardbg.png')",
       },
     },
   },

@@ -15,12 +15,6 @@ const Footer = () => {
         width="28"
         alt="Linkedin"
       />
-      <img
-        src="../src/assets/images/Discord.png"
-        height="28"
-        width="28"
-        alt="Discord"
-      />
     </div>
   );
 };

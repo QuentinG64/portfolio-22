@@ -15,6 +15,19 @@
   .text-shadow-none {
     text-shadow: none;
   }
+  .buttonContact {
+    font-size: 3rem;
+    font-family: "Nunito-reg";
+    color: #e8c64c;
+    border: 2px solid #e8c64c;
+    display: inline;
+    padding: 0 1rem 0 1rem;
+    background: linear-gradient(to left, transparent 50%, #e8c64c 50%);
+    background-size: 200%;
+    background-position: right;
+    cursor: pointer;
+    transition: background-position 0.5s ease-in-out;
+  }
 }
 
 @font-face {
