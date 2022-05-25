@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
+import LoaderProjects from "./LoaderProjects";
 import Navbar from "./Navbar";
 
 const Projects = () => {
-  return (
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+  return loading ? (
+    <LoaderProjects />
+  ) : (
     <div>
       <div>
         <Navbar />

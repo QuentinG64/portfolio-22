@@ -68,7 +68,7 @@ const HomePage = () => {
           },
           particles: {
             color: {
-              value: ["#ffffff", "#333", "#03DAC6"],
+              value: ["#ffffff", "#333", "#03DAC6", "#E8C64C"],
             },
             links: {
               color: "#ffffff",

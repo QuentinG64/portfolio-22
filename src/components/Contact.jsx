@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
+import LoaderContact from "./LoaderContact";
 import Navbar from "./Navbar";
 
 const Contact = () => {
-  return (
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+  return loading ? (
+    <LoaderContact />
+  ) : (
     <div>
       <div>
         <Navbar />
