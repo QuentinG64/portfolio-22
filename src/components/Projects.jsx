@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import LoaderProjects from "./LoaderProjects";
 import Navbar from "./Navbar";
+import ProjectCard from "./ProjectCard";
+import projectsData from "../data/projectsData";
 
 const Projects = () => {
   const [loading, setLoading] = useState(true);
@@ -31,6 +33,11 @@ const Projects = () => {
           width="300"
           alt=""
         />
+      </div>
+      <div className="flex flex-wrap gap-3 mx-4 mt-6 justify-center">
+        {projectsData.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
       </div>
       <div>
         <Footer />

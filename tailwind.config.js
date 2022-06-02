@@ -23,6 +23,9 @@ module.exports = {
       backgroundImage: {
         homeBg: "url('./assets/images/bg_main.jpeg')",
         card: "url('/public/assets/global/cardbg.png')",
+        xpanse: "url('../src/assets/images/xpanse.png')",
+        sqp: "url('../src/assets/images/sqp.png')",
+        clubsandwich: "url('../src/assets/images/clubSandwich.png')",
       },
     },
   },

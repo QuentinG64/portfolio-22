@@ -72,7 +72,7 @@ const AboutMe = () => {
                 and skill."
               </div>
               <div className="text-sm mb-4 font-xlight">Wilbur Wright</div>
-              <div className="font-light">Discover mine.</div>
+              <div className="font-light animate-bounce">↓ Discover mine ↓</div>
               <Box
                 sx={{
                   display: "flex",

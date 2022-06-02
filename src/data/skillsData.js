@@ -20,7 +20,7 @@ const mySkills = [
   },
   {
     type: "dev",
-    name: "Sass",
+    name: "Tailwind CSS",
     masteryOpposite: "13%",
     color: "#63B5CF",
   },
@@ -50,7 +50,7 @@ const mySkills = [
   },
   {
     type: "design",
-    name: "Inovation Management",
+    name: "Innovation Management",
     masteryOpposite: "13%",
     color: "#63B5CF",
   },
