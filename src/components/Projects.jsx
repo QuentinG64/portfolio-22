@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Bounce from "react-reveal/Bounce";
+import Reveal from "react-reveal/Reveal";
 import Footer from "./Footer";
 import LoaderProjects from "./LoaderProjects";
 import Navbar from "./Navbar";
@@ -16,7 +17,7 @@ const Projects = () => {
   return loading ? (
     <LoaderProjects />
   ) : (
-    <div>
+    <div className="h-screen w-screen">
       <div>
         <Navbar />
       </div>
@@ -41,11 +42,14 @@ const Projects = () => {
           </Bounce>
         </div>
       </div>
-      <div className="flex flex-wrap gap-14 mx-4 mt-12 justify-center pb-24">
-        {projectsData.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
-      </div>
+      <Reveal>
+        <div className="flex flex-wrap gap-6 mx-4 mt-28 justify-center pb-24">
+          {projectsData &&
+            projectsData.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+        </div>
+      </Reveal>
       <div>
         <Footer />
       </div>

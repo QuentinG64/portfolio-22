@@ -11,7 +11,7 @@ import SkillsDesign from "./components/SkillsDesign";
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-f-stop via-s-stop to-t-stop h-full w-full bg-cover -z-20">
+    <div className="bg-bg-1 h-full w-full bg-cover -z-20">
       <AnimatedCursor
         innerSize={8}
         outerSize={12}

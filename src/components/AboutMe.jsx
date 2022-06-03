@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import LoaderAbout from "./LoaderAbout";
 import Footer from "./Footer";
-import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
+import Reveal from "react-reveal/Reveal";
 
 const AboutMe = () => {
   const [loading, setLoading] = useState(true);
@@ -68,7 +68,7 @@ const AboutMe = () => {
           />
 
           <div className="flex-col w-full ml-64 mr-64 text-justify">
-            <Fade bottom>
+            <Reveal>
               <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 mollis luctus rhoncus. Curabitur sem ante, sollicitudin quis
@@ -118,7 +118,7 @@ const AboutMe = () => {
                   </Box>
                 </div>
               </div>
-            </Fade>
+            </Reveal>
           </div>
         </div>
       </div>
