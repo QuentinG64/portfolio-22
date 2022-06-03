@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import mySkills from "../data/skillsData";
 import Skill from "./Skill";
+import Fade from "react-reveal/Fade";
 
 const SkillsDesign = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const SkillsDesign = () => {
     navigate("/aboutme/design");
   };
   return (
-    <div>
+    <div className="h-screen w-screen">
       <div>
         <Navbar />
       </div>
@@ -37,19 +38,21 @@ const SkillsDesign = () => {
         alt=""
       />
       <img
-        className="absolute bottom-0 -z-50"
+        className="absolute bottom-0 z-50"
         src="../src/assets/images/hero.png"
         height="400"
         width="400"
         alt="heroQuentin"
       />
-      <div>
-        {mySkills
-          .filter(({ type }) => type === "design")
-          .map((skill, index) => (
-            <Skill key={index} {...skill} />
-          ))}
-      </div>
+      <Fade cascade>
+        <div>
+          {mySkills
+            .filter(({ type }) => type === "design")
+            .map((skill, index) => (
+              <Skill key={index} {...skill} />
+            ))}
+        </div>
+      </Fade>
       <div className="mt-10 text-main-1 w-[100%] flex items-center flex-col text-m">
         <Box
           sx={{
@@ -67,9 +70,15 @@ const SkillsDesign = () => {
             color="inherit"
             size="large"
           >
-            <Button onClick={techSkills}>TECH</Button>
-            <Button onClick={designSkills}>DESIGN</Button>
-            <Button>OTHER</Button>
+            <div className="hover:bg-main-1 hover:text-white">
+              <Button onClick={techSkills}>TECH</Button>
+            </div>
+            <div className="bg-main-1 text-white">
+              <Button onClick={designSkills}>DESIGN</Button>
+            </div>
+            <div className="hover:bg-main-1 hover:text-white">
+              <Button>OTHER</Button>
+            </div>
           </ButtonGroup>
         </Box>
       </div>

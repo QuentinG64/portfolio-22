@@ -19,7 +19,7 @@ const SkillsTech = () => {
     navigate("/aboutme/design");
   };
   return (
-    <div>
+    <div className="h-screen w-screen">
       <div>
         <Navbar />
       </div>
@@ -37,7 +37,7 @@ const SkillsTech = () => {
         alt=""
       />
       <img
-        className="absolute bottom-0 -z-50"
+        className="absolute bottom-0 z-50"
         src="../src/assets/images/hero.png"
         height="400"
         width="400"
@@ -67,9 +67,15 @@ const SkillsTech = () => {
             color="inherit"
             size="large"
           >
-            <Button onClick={techSkills}>TECH</Button>
-            <Button onClick={designSkills}>DESIGN</Button>
-            <Button>OTHER</Button>
+            <div className="bg-main-1 text-white">
+              <Button onClick={techSkills}>TECH</Button>
+            </div>
+            <div className="hover:bg-main-1 hover:text-white">
+              <Button onClick={designSkills}>DESIGN</Button>
+            </div>
+            <div className="hover:bg-main-1 hover:text-white">
+              <Button>OTHER</Button>
+            </div>
           </ButtonGroup>
         </Box>
       </div>

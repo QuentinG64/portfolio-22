@@ -28,7 +28,7 @@ const AboutMe = () => {
   return loading ? (
     <LoaderAbout />
   ) : (
-    <div>
+    <div className="h-screen w-screen">
       <div>
         <Navbar />
       </div>
@@ -49,7 +49,7 @@ const AboutMe = () => {
         />
         <div className="text-main-2 font-xlight text-2xl flex flex-row mt-20">
           <img
-            className="absolute bottom-0 -z-50"
+            className="absolute bottom-0 z-50"
             src="../src/assets/images/hero.png"
             height="400"
             width="400"
@@ -89,9 +89,15 @@ const AboutMe = () => {
                   color="inherit"
                   size="large"
                 >
-                  <Button onClick={techSkills}>TECH</Button>
-                  <Button onClick={designSkills}>DESIGN</Button>
-                  <Button>OTHER</Button>
+                  <div className="hover:bg-main-1 hover:text-white">
+                    <Button onClick={techSkills}>TECH</Button>
+                  </div>
+                  <div className="hover:bg-main-1 hover:text-white">
+                    <Button onClick={designSkills}>DESIGN</Button>
+                  </div>
+                  <div className="hover:bg-main-1 hover:text-white">
+                    <Button>OTHER</Button>
+                  </div>
                 </ButtonGroup>
               </Box>
             </div>
