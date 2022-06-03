@@ -13,7 +13,7 @@ const Contact = () => {
   return loading ? (
     <LoaderContact />
   ) : (
-    <div>
+    <div className="h-screen w-screen">
       <div>
         <Navbar />
       </div>

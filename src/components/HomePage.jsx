@@ -8,6 +8,7 @@ import Switch from "@mui/material/Switch";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ButtonContact from "./ButtonContact";
+import Bounce from "react-reveal/Bounce";
 
 const HomePage = () => {
   const particlesInit = async (main) => {
@@ -28,7 +29,7 @@ const HomePage = () => {
   console.log(linked);
 
   return (
-    <div className="w-screen">
+    <div className="w-screen h-screen">
       <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-white font-reg">
         <Switch onClick={handleLinked} />
         Click me!
@@ -122,9 +123,16 @@ const HomePage = () => {
             alt="lineHome"
           />
         </div>
-        <div className="text-main-2 text-4xl font-reg pl-4">
-          HELLO, I AM{" "}
-          <span className="text-main-1 font-bold text-5xl">QUENTIN.</span>
+
+        <div className="text-main-2 text-4xl font-reg pl-4 flex gap-1">
+          <Bounce left>
+            <div>HELLO, I AM </div>{" "}
+          </Bounce>
+          <Bounce right>
+            <div>
+              <span className="text-main-1 font-bold text-4xl">QUENTIN.</span>
+            </div>
+          </Bounce>
         </div>
       </div>
       <div className="text-main-2 text-6xl font-reg pt-28 pl-40">

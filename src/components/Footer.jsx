@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="gap-5 flex mb-3 justify-center fixed bottom-0 left-[50%] right-[25%] translate-x-[-50%]">
+    <div className="gap-5 flex mb-3 justify-center fixed bottom-0 left-[50%] right-[25%] translate-x-[-50%] cursor-pointer">
       <a href="https://github.com/QuentinG64" target="_blank" rel="noreferrer">
         <img
           src="../src/assets/images/Github.png"
