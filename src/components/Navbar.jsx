@@ -2,6 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  // Coded --> blur background and fixed navbar when scrolling
+  // const [color, setColor] = useState(false);
+  // const changeColor = () => {
+  //   if (window.scrollY >= 50) {
+  //     setColor(true);
+  //   } else {
+  //     setColor(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", changeColor);
+
   return (
     <div>
       <nav className="flex justify-between px-3 items-center">

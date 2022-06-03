@@ -26,20 +26,15 @@ const SkillsDesign = () => {
       </div>
       <img
         className="mt-12"
-        src="../src/assets/images/wordsTitle.svg"
+        src="./assets/images/wordsTitle.svg"
         height="300"
         width="300"
         alt=""
       />
-      <img
-        src="../src/assets/images/Line1.png"
-        height="300"
-        width="300"
-        alt=""
-      />
+      <img src="./assets/images/Line1.png" height="300" width="300" alt="" />
       <img
         className="absolute bottom-0 z-50"
-        src="../src/assets/images/hero.png"
+        src="./assets/images/hero.png"
         height="400"
         width="400"
         alt="heroQuentin"

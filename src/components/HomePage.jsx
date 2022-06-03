@@ -9,6 +9,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ButtonContact from "./ButtonContact";
 import Bounce from "react-reveal/Bounce";
+import Fade from "react-reveal/Fade";
 
 const HomePage = () => {
   const particlesInit = async (main) => {
@@ -30,9 +31,9 @@ const HomePage = () => {
 
   return (
     <div className="w-screen h-screen">
-      <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-white font-reg">
+      <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-main-1 font-bold">
         <Switch onClick={handleLinked} />
-        Click me!
+        {linked ? "BETTER WITH DOTS?" : "BETTER WITH LINKS?"}
       </div>
       <Particles
         id="tsparticles"
@@ -117,7 +118,7 @@ const HomePage = () => {
       <div className="flex pt-[10%] items-center">
         <div>
           <img
-            src="../src/assets/images/Line1.png"
+            src="./assets/images/Line1.png"
             height="30"
             width="150"
             alt="lineHome"
@@ -125,8 +126,8 @@ const HomePage = () => {
         </div>
 
         <div className="text-main-2 text-4xl font-reg pl-4 flex gap-1">
-          <Bounce left>
-            <div>HELLO, I AM </div>{" "}
+          <Bounce left cascade>
+            <div>HELLO, I AM </div>
           </Bounce>
           <Bounce right>
             <div>
@@ -135,9 +136,14 @@ const HomePage = () => {
           </Bounce>
         </div>
       </div>
+
       <div className="text-main-2 text-6xl font-reg pt-28 pl-40">
-        I AM A <span className="text-main-1 font-bold">CREATIVE CODER,</span>
-        <br />
+        <Fade bottom>
+          <div>
+            I AM A{" "}
+            <span className="text-main-1 font-bold">CREATIVE CODER,</span>
+          </div>
+        </Fade>
         <div className="text-main-2 font-xlight text-3xl">
           <Typewriter
             options={{

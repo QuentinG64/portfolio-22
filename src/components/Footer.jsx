@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="gap-5 flex mb-3 justify-center fixed bottom-0 left-[50%] right-[25%] translate-x-[-50%] cursor-pointer">
       <a href="https://github.com/QuentinG64" target="_blank" rel="noreferrer">
         <img
-          src="../src/assets/images/Github.png"
+          src="./assets/images/Github.png"
           height="28"
           width="28"
           alt="github"
@@ -18,7 +18,7 @@ const Footer = () => {
         rel="noreferrer"
       >
         <img
-          src="../src/assets/images/Linkedin.png"
+          src="./assets/images/Linkedin.png"
           height="28"
           width="28"
           alt="Linkedin"

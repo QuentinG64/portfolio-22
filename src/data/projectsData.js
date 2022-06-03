@@ -1,7 +1,7 @@
 const projectsData = [
   {
     name: "XPANSE",
-    picture: "../src/assets/images/xpanse.png",
+    picture: "./assets/images/xpanse.png",
     url: "https://xpanse-agency.vercel.app/#/",
     title: "Fake Spatial Recruitment Agency - Wild Code School Project",
     description:
@@ -10,7 +10,7 @@ const projectsData = [
   },
   {
     name: "SauveQuiPeut",
-    picture: "../src/assets/images/sqp.png",
+    picture: "./assets/images/sqp.png",
     url: "https://sauvequipeut.vercel.app/",
     title:
       "Fake Green NFT Marketplace -  Wild Code School Hackathon (1st prize)",
@@ -20,7 +20,7 @@ const projectsData = [
   },
   {
     name: "Club Sandwich",
-    picture: "../src/assets/images/clubSandwich.png",
+    picture: "./assets/images/clubSandwich.png",
     url: "",
     title: "High Quality Sandwich in BTZ - Wild Code School Project",
     description:
@@ -29,7 +29,7 @@ const projectsData = [
   },
   {
     name: "Club Sandwich",
-    picture: "../src/assets/images/clubSandwich.png",
+    picture: "./assets/images/clubSandwich.png",
     url: "",
     title: "High Quality Sandwich in BTZ - Wild Code School Project",
     description:
@@ -38,7 +38,7 @@ const projectsData = [
   },
   {
     name: "Club Sandwich",
-    picture: "../src/assets/images/clubSandwich.png",
+    picture: "./assets/images/clubSandwich.png",
     url: "",
     title: "High Quality Sandwich in BTZ - Wild Code School Project",
     description:

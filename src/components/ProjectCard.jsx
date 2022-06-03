@@ -3,8 +3,8 @@ import React from "react";
 
 const ProjectCard = ({ picture, title, skills, description, name, url }) => {
   return (
-    <div className="w-[40%]">
-      <div>
+    <div className="w-[40%] border-2">
+      <div className="border-2 border-yellow-500	">
         <img src={picture} alt={title} />
       </div>
       <div className="dataCard relative flex flex-col items-center gap-1 text-center">
