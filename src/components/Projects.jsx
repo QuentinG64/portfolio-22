@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
+import Bounce from "react-reveal/Bounce";
+import Reveal from "react-reveal/Reveal";
 import Footer from "./Footer";
 import LoaderProjects from "./LoaderProjects";
 import Navbar from "./Navbar";
 import ProjectCard from "./ProjectCard";
 import projectsData from "../data/projectsData";
-import Bounce from "react-reveal/Bounce";
-import Reveal from "react-reveal/Reveal";
 
 const Projects = () => {
   const [loading, setLoading] = useState(true);
