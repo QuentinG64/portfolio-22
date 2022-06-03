@@ -1,49 +1,46 @@
 const projectsData = [
   {
+    name: "Club Sandwich",
+    src: "./assets/images/clubSandwich.png",
+    width: 4,
+    height: 4,
+    url: "#",
+    github: "#",
+    title: "High Quality Sandwich in BTZ",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    stackA: "./assets/images/logoSkills/figma-svgrepo-com.svg",
+    stackB: "./assets/images/logoSkills/react-svgrepo-com.svg",
+    stackC: "./assets/images/logoSkills/sass-svgrepo-com.svg",
+    stackD: "./assets/images/logoSkills/typescript-svgrepo-com.svg",
+  },
+  {
     name: "XPANSE",
-    picture: "./assets/images/xpanse.png",
+    src: "./assets/images/xpanse.png",
+    width: 4,
+    height: 4,
     url: "https://xpanse-agency.vercel.app/#/",
-    title: "Fake Spatial Recruitment Agency - Wild Code School Project",
+    github: "https://github.com/QuentinG64/xpanse",
+    title: "Fake Spatial Recruitment Agency",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    skills: ["#UX/UI", "#React", "#Axios", "#Tailwind CSS"],
+    stackA: "./assets/images/logoSkills/figma-svgrepo-com.svg",
+    stackB: "./assets/images/logoSkills/react-svgrepo-com.svg",
+    stackC: "./assets/images/logoSkills/tailwind-svgrepo-com.svg",
   },
   {
-    name: "SauveQuiPeut",
-    picture: "./assets/images/sqp.png",
+    name: "Sauve Qui Peut",
+    src: "./assets/images/sqp.png",
+    width: 4,
+    height: 4,
     url: "https://sauvequipeut.vercel.app/",
-    title:
-      "Fake Green NFT Marketplace -  Wild Code School Hackathon (1st prize)",
+    github: "https://github.com/geoffreyemerit/SauveQuiPeut",
+    title: "Fake Green NFT Marketplace",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    skills: ["#UX/UI", "#React", "#Tailwind CSS"],
-  },
-  {
-    name: "Club Sandwich",
-    picture: "./assets/images/clubSandwich.png",
-    url: "",
-    title: "High Quality Sandwich in BTZ - Wild Code School Project",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    skills: ["#UX/UI", "#React", "#TypeScript", "#Sass"],
-  },
-  {
-    name: "Club Sandwich",
-    picture: "./assets/images/clubSandwich.png",
-    url: "",
-    title: "High Quality Sandwich in BTZ - Wild Code School Project",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    skills: ["#UX/UI", "#React", "#TypeScript", "#Sass"],
-  },
-  {
-    name: "Club Sandwich",
-    picture: "./assets/images/clubSandwich.png",
-    url: "",
-    title: "High Quality Sandwich in BTZ - Wild Code School Project",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    skills: ["#UX/UI", "#React", "#TypeScript", "#Sass"],
+    stackA: "./assets/images/logoSkills/figma-svgrepo-com.svg",
+    stackB: "./assets/images/logoSkills/react-svgrepo-com.svg",
+    stackC: "./assets/images/logoSkills/tailwind-svgrepo-com.svg",
   },
 ];
 

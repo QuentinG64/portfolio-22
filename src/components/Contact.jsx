@@ -30,13 +30,11 @@ const Contact = () => {
 
         <div className="text-main-2 text-4xl font-reg pl-4 flex gap-1">
           <Bounce left cascade>
-            <div>WANNA </div>
+            <div>CODE </div>
           </Bounce>
           <Bounce right>
             <div>
-              <span className="text-main-1 font-bold text-4xl">
-                WORK WITH ME?
-              </span>
+              <span className="text-main-1 font-bold text-4xl">WITH Q?</span>
             </div>
           </Bounce>
         </div>

@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import mySkills from "../data/skillsData";
 import Skill from "./Skill";
+import Bounce from "react-reveal/Bounce";
 
 const SkillsTech = () => {
   const navigate = useNavigate();
@@ -23,21 +24,30 @@ const SkillsTech = () => {
       <div>
         <Navbar />
       </div>
-      <img
-        className="mt-12"
-        src="./assets/images/wordsTitle.svg"
-        height="300"
-        width="300"
-        alt=""
-      />
-      <img src="./assets/images/Line1.png" height="300" width="300" alt="" />
-      <img
-        className="absolute bottom-0 z-50"
-        src="./assets/images/hero.png"
-        height="400"
-        width="400"
-        alt="heroQuentin"
-      />
+      <div>
+        <div className="flex pt-[5%] items-center">
+          <div>
+            <img
+              src="./assets/images/Line1.png"
+              height="30"
+              width="150"
+              alt="lineHome"
+            />
+          </div>
+
+          <div className="text-main-2 text-4xl font-reg pl-4 flex gap-1">
+            <Bounce left cascade>
+              <div>TE</div>
+            </Bounce>
+            <Bounce right>
+              <div>
+                <span className="text-main-1 font-bold text-4xl">CH.</span>
+              </div>
+            </Bounce>
+          </div>
+        </div>
+      </div>
+
       <div>
         {mySkills
           .filter(({ type }) => type === "dev")
