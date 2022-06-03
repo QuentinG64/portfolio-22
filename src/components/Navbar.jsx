@@ -9,7 +9,7 @@ const Navbar = () => {
           <Link to="/">
             <img
               className="pt-3"
-              src="../src/assets/images/logobw.svg"
+              src="./assets/images/logobw.svg"
               alt="logoQuentin"
               height="45"
               width="45"
