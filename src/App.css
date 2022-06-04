@@ -57,37 +57,37 @@
 
 @font-face {
   font-family: "Nunito-Reg";
-  src: url("./assets/font/Nunito/Nunito-Regular.ttf");
+  src: url("../public/assets/font/Nunito/Nunito-Regular.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Bold";
-  src: url("./assets/font/Nunito/Nunito-Bold.ttf");
+  src: url("../public/assets/font/Nunito/Nunito-Bold.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Xbold";
-  src: url("./assets/font/Nunito/Nunito-ExtraBold.ttf");
+  src: url("../public/assets/font/Nunito/Nunito-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Light";
-  src: url("./assets/font/Nunito/Nunito-Light.ttf");
+  src: url("../public/assets/font/Nunito/Nunito-Light.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Xlight";
-  src: url("./assets/font/Nunito/Nunito-ExtraLight.ttf");
+  src: url("../public/assets/font/Nunito/Nunito-ExtraLight.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Italic";
-  src: url("./assets/font/Nunito/Nunito-Italic.ttf");
+  src: url("../public/assets/font/Nunito/Nunito-Italic.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Sembold";
-  src: url("./assets/font/Nunito/Nunito-SemiBold.ttf");
+  src: url("../public/assets/font/Nunito/Nunito-SemiBold.ttf");
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
