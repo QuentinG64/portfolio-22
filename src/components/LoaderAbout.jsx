@@ -14,7 +14,7 @@ const LoaderAbout = () => {
           CURRENTLY <span className="text-main-1">WRITING</span> THINGS DOWN...
         </div>
 
-        <Stack sx={{ width: "50%", color: "#E8C64C" }} spacing={1}>
+        <Stack sx={{ width: "50%", color: "#e8c547" }} spacing={1}>
           <LinearProgress color="inherit" />
         </Stack>
       </div>

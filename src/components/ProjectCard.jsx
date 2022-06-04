@@ -33,10 +33,10 @@ const ProjectCard = ({
             <img className="w-12 mx-4 py-5" src={stackD} alt="" />
           </div>
           <div className={stackE ? "" : "hidden"}>
-            <img className="w-12 mx-4 py-5" src={stackD} alt="" />
+            <img className="w-12 mx-4 py-5" src={stackE} alt="" />
           </div>
           <div className={stackF ? "" : "hidden"}>
-            <img className="w-12 mx-4 py-5" src={stackD} alt="" />
+            <img className="w-12 mx-4 py-5" src={stackF} alt="" />
           </div>
         </div>
         <div className="mt-1 flex">

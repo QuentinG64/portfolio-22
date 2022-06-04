@@ -13,8 +13,9 @@ module.exports = {
         sbold: ["Nunito-Sembold"],
       },
       colors: {
-        "bg-1": "#1D1D1D",
-        "main-1": "#E8C64C",
+        "bg-1": "#30323d",
+        "bg-2": "#f7ede2",
+        "main-1": "#e8c547",
         "main-2": "#FFF",
         "f-stop": "#0F2027",
         "s-stop": "#203A43",
