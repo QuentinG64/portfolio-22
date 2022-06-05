@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import Bounce from "react-reveal/Bounce";
 import Reveal from "react-reveal/Reveal";
 import Footer from "./Footer";
-import LoaderProjects from "./LoaderProjects";
-import Navbar from "./Navbar";
+import LoaderProjects from "./LoaderWebsite";
 import ProjectCard from "./ProjectCard";
 import projectsData from "../data/projectsData";
 
@@ -17,10 +16,7 @@ const Projects = () => {
   return loading ? (
     <LoaderProjects />
   ) : (
-    <div className="h-screen w-screen">
-      <div>
-        <Navbar />
-      </div>
+    <div name="Project" className="h-screen w-screen">
       <div className="flex pt-[5%] items-center">
         <div>
           <img
@@ -43,7 +39,7 @@ const Projects = () => {
         </div>
       </div>
       <Reveal>
-        <div className="flex flex-wrap gap-6 mx-4 mt-28 justify-center pb-24">
+        <div className="flex flex-wrap gap-6 mx-4 mt-36 justify-center pb-24">
           {projectsData &&
             projectsData.map((project, index) => (
               <ProjectCard key={index} {...project} />

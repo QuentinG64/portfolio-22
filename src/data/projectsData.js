@@ -6,13 +6,15 @@ const projectsData = [
     height: 4,
     url: "#",
     github: "#",
-    title: "High Quality Sandwich in BTZ",
+    title: "Full-Stack - Restaurant website",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     stackA: "./assets/images/logoSkills/figma-svgrepo-com.svg",
     stackB: "./assets/images/logoSkills/react-svgrepo-com.svg",
     stackC: "./assets/images/logoSkills/sass-svgrepo-com.svg",
     stackD: "./assets/images/logoSkills/typescript-svgrepo-com.svg",
+    stackE: "./assets/images/logoSkills/mysql-logo-svgrepo-com.jpeg",
+    stackF: "./assets/images/logoSkills/nodejs-icon-logo-svgrepo-com.svg",
   },
   {
     name: "XPANSE",
@@ -21,7 +23,7 @@ const projectsData = [
     height: 4,
     url: "https://xpanse-agency.vercel.app/#/",
     github: "https://github.com/QuentinG64/xpanse",
-    title: "Fake Spatial Recruitment Agency",
+    title: "Front & API - Spatial website",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     stackA: "./assets/images/logoSkills/figma-svgrepo-com.svg",
@@ -35,7 +37,7 @@ const projectsData = [
     height: 4,
     url: "https://sauvequipeut.vercel.app/",
     github: "https://github.com/geoffreyemerit/SauveQuiPeut",
-    title: "Fake Green NFT Marketplace",
+    title: "Hackathon (Front) - NFT Marketplace",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     stackA: "./assets/images/logoSkills/figma-svgrepo-com.svg",

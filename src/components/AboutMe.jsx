@@ -30,11 +30,7 @@ const AboutMe = () => {
   return loading ? (
     <LoaderAbout />
   ) : (
-    <div className="h-screen w-screen">
-      <div>
-        <Navbar />
-      </div>
-
+    <div name="About" className="h-screen w-screen">
       <div>
         <div className="flex pt-[5%] items-center">
           <div>
@@ -60,7 +56,7 @@ const AboutMe = () => {
 
         <div className="text-main-2 font-xlight text-2xl flex flex-row mt-20">
           <img
-            className="absolute bottom-0 z-50"
+            className="relative bottom-0 z-50"
             src="./assets/images/hero.png"
             height="400"
             width="400"

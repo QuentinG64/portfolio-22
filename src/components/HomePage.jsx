@@ -1,15 +1,14 @@
 /* eslint-disable */
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Switch from "@mui/material/Switch";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ButtonContact from "./ButtonContact";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
+import LoaderWebsite from "./LoaderWebsite";
 
 const HomePage = () => {
   const particlesInit = async (main) => {
@@ -21,20 +20,15 @@ const HomePage = () => {
     console.log(container);
   };
 
-  const [linked, setLinked] = useState(true);
+  // const [linked, setLinked] = useState(true);
 
-  const handleLinked = () => {
-    setLinked(!linked);
-  };
-
-  console.log(linked);
+  // const handleLinked = () => {
+  //   setLinked(!linked);
+  // };
 
   return (
-    <div className="w-screen h-screen">
-      <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-main-1 font-bold">
-        <Switch onClick={handleLinked} />
-        {linked ? "BETTER WITH DOTS?" : "BETTER WITH LINKS?"}
-      </div>
+    <div name="Home" className="w-screen h-screen">
+      <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-main-1 font-bold"></div>
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -70,12 +64,12 @@ const HomePage = () => {
           },
           particles: {
             color: {
-              value: ["#ffffff", "#333", "#03DAC6", "#E8C64C"],
+              value: ["#ffffff", "#333", "#e8c547"],
             },
             links: {
               color: "#ffffff",
               distance: 150,
-              enable: linked,
+              enable: false,
               opacity: 0.5,
               width: 1,
             },
@@ -89,7 +83,7 @@ const HomePage = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 3,
+              speed: 2,
               straight: false,
             },
             number: {
@@ -112,9 +106,6 @@ const HomePage = () => {
           detectRetina: true,
         }}
       />
-      <div>
-        <Navbar />
-      </div>
       <div className="flex pt-[10%] items-center">
         <div>
           <img
@@ -141,17 +132,18 @@ const HomePage = () => {
         <Fade bottom>
           <div>
             I AM A{" "}
-            <span className="text-main-1 font-bold">CREATIVE CODER,</span>
+            <span className="text-main-1 font-bold">
+              FULL STACK WEB DEVELOPER,
+            </span>
           </div>
         </Fade>
         <div className="text-main-2 font-xlight text-3xl">
           <Typewriter
             options={{
               strings: [
+                "CRAFTING DIGITAL EXPERIENCES.",
                 "MIXING ART WITH CODE.",
-                "CRAFTING ORGANIC EXPERIENCES.",
                 "EXPLORING BLOCKCHAIN TECH.",
-                "SURFING WWW (world wide waves).",
                 "COOKING STUFF ON THE INTERNET.",
               ],
               autoStart: true,
@@ -161,8 +153,15 @@ const HomePage = () => {
         </div>
       </div>
       <div className="mt-5 ml-40">
-        <Link to="/contact">
-          <ButtonContact naming="Contact me!" />
+        <Link
+          to="Contact"
+          activeClass="active"
+          spy
+          smooth
+          isDynamic
+          duration={1000}
+        >
+          <ButtonContact naming="Code with Q?" />
         </Link>
       </div>
       <div>
