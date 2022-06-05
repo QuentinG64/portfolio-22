@@ -21,9 +21,7 @@ const SkillsTech = () => {
   };
   return (
     <div className="h-screen w-screen">
-      <div>
-        <Navbar />
-      </div>
+      <div></div>
       <div>
         <div className="flex pt-[5%] items-center">
           <div>

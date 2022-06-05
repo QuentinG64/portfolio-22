@@ -23,11 +23,11 @@ function App() {
   return loading ? (
     <LoaderWebsite />
   ) : (
-    <div className="bg-bg-1 h-full w-full bg-cover -z-20">
+    <div className="h-full w-full -z-20">
       <AnimatedCursor
         innerSize={8}
         outerSize={12}
-        color="232, 198, 76"
+        color="12, 194, 201"
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={2}
@@ -46,7 +46,6 @@ function App() {
         ]}
       />
       <div>
-        <Navbar />
         <HomePage />
         <AboutMe />
         <Projects />

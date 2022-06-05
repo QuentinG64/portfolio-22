@@ -17,19 +17,25 @@
   }
 
   .buttonContact {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Nunito-reg";
-    color: #e8c64c;
-    border: 2px solid #e8c64c;
+    color: #4ecdc4;
+    border: 2px solid #4ecdc4;
     display: inline;
     padding: 0 1rem 0 1rem;
-    background: linear-gradient(to left, transparent 50%, #e8c64c 50%);
+    background: linear-gradient(to left, transparent 50%, #4ecdc4 50%);
     background-size: 200%;
     background-position: right;
     cursor: pointer;
     transition: background-position 0.5s ease-in-out;
   }
-
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
   .button {
     display: block;
     width: 100px;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -8,7 +8,6 @@ import ButtonContact from "./ButtonContact";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
-import LoaderWebsite from "./LoaderWebsite";
 
 const HomePage = () => {
   const particlesInit = async (main) => {
@@ -27,8 +26,7 @@ const HomePage = () => {
   // };
 
   return (
-    <div name="Home" className="w-screen h-screen">
-      <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-main-1 font-bold"></div>
+    <div name="Home" className="w-screen h-screen bg-bg-1">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -106,29 +104,18 @@ const HomePage = () => {
           detectRetina: true,
         }}
       />
-      <div className="flex pt-[10%] items-center">
-        <div>
-          <img
-            src="./assets/images/Line1.png"
-            height="30"
-            width="150"
-            alt="lineHome"
-          />
-        </div>
-
-        <div className="text-main-2 text-4xl font-reg pl-4 flex gap-1">
+      <div className="flex pt-[15%] justify-center">
+        <div className="text-main-2 text-4xl font-reg">
           <Bounce left cascade>
-            <div>HELLO, I AM </div>
-          </Bounce>
-          <Bounce right>
             <div>
+              HELLO, I AM{" "}
               <span className="text-main-1 font-bold text-4xl">QUENTIN.</span>
             </div>
           </Bounce>
         </div>
       </div>
 
-      <div className="text-main-2 text-6xl font-reg pt-28 pl-40">
+      <div className="text-main-2 text-6xl font-reg pt-4 flex justify-center flex-col text-center">
         <Fade bottom>
           <div>
             I AM A{" "}
@@ -141,10 +128,10 @@ const HomePage = () => {
           <Typewriter
             options={{
               strings: [
-                "CRAFTING DIGITAL EXPERIENCES.",
-                "MIXING ART WITH CODE.",
-                "EXPLORING BLOCKCHAIN TECH.",
                 "COOKING STUFF ON THE INTERNET.",
+                "CRAFTING DIGITAL EXPERIENCES.",
+                "IN LOVE WITH INTUITIVE UX/UI.",
+                "MIXING ART WITH CODE.",
               ],
               autoStart: true,
               loop: true,
@@ -152,7 +139,7 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className="mt-5 ml-40">
+      <div className="mt-10 flex justify-center">
         <Link
           to="Contact"
           activeClass="active"
@@ -161,7 +148,7 @@ const HomePage = () => {
           isDynamic
           duration={1000}
         >
-          <ButtonContact naming="Code with Q?" />
+          <ButtonContact naming="View my work" />
         </Link>
       </div>
       <div>
