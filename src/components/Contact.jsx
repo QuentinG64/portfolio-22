@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Bounce from "react-reveal/Bounce";
 import Footer from "./Footer";
 import LoaderContact from "./LoaderContact";
-import Navbar from "./Navbar";
 
 const Contact = () => {
   const [loading, setLoading] = useState(true);
@@ -14,10 +13,7 @@ const Contact = () => {
   return loading ? (
     <LoaderContact />
   ) : (
-    <div className="h-screen w-screen">
-      <div>
-        <Navbar />
-      </div>
+    <div name="Contact" className="h-screen w-screen">
       <div className="flex pt-[5%] items-center">
         <div>
           <img

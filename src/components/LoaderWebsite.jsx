@@ -1,17 +1,13 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import LinearProgress from "@mui/material/LinearProgress";
-import Navbar from "./Navbar";
 
-const LoaderProjects = () => {
+const LoaderWebsite = () => {
   return (
     <div>
-      <div>
-        <Navbar />
-      </div>
-      <div className="flex h-screen w-screen justify-center items-center flex-col gap-3 font-bold text-xl text-white">
+      <div className="flex h-screen w-screen justify-center items-center flex-col gap-3 font-bold text-xl text-white bg-bg-1 bg-cover -z-20">
         <div className="flex-row">
-          CURRENTLY <span className="text-main-1">COOKING</span> STUFF...
+          Q IS CURRENTLY <span className="text-main-1">CRAFTING</span> STUFF...
         </div>
 
         <Stack sx={{ width: "50%", color: "#e8c547" }} spacing={1}>
@@ -22,4 +18,4 @@ const LoaderProjects = () => {
   );
 };
 
-export default LoaderProjects;
+export default LoaderWebsite;

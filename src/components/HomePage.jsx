@@ -1,14 +1,14 @@
 /* eslint-disable */
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ButtonContact from "./ButtonContact";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
+import LoaderWebsite from "./LoaderWebsite";
 
 const HomePage = () => {
   const particlesInit = async (main) => {
@@ -27,7 +27,7 @@ const HomePage = () => {
   // };
 
   return (
-    <div className="w-screen h-screen">
+    <div name="Home" className="w-screen h-screen">
       <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-main-1 font-bold"></div>
       <Particles
         id="tsparticles"
@@ -83,7 +83,7 @@ const HomePage = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 3,
+              speed: 2,
               straight: false,
             },
             number: {
@@ -106,9 +106,6 @@ const HomePage = () => {
           detectRetina: true,
         }}
       />
-      <div>
-        <Navbar />
-      </div>
       <div className="flex pt-[10%] items-center">
         <div>
           <img
@@ -156,8 +153,15 @@ const HomePage = () => {
         </div>
       </div>
       <div className="mt-5 ml-40">
-        <Link to="/contact">
-          <ButtonContact naming="Contact me!" />
+        <Link
+          to="Contact"
+          activeClass="active"
+          spy
+          smooth
+          isDynamic
+          duration={1000}
+        >
+          <ButtonContact naming="Code with Q?" />
         </Link>
       </div>
       <div>
