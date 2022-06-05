@@ -10,7 +10,7 @@ const LoaderWebsite = () => {
           Q IS CURRENTLY <span className="text-main-1">CRAFTING</span> STUFF...
         </div>
 
-        <Stack sx={{ width: "50%", color: "#e8c547" }} spacing={1}>
+        <Stack sx={{ width: "50%", color: "#ff6b6b" }} spacing={1}>
           <LinearProgress color="inherit" />
         </Stack>
       </div>

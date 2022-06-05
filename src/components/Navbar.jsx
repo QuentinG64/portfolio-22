@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex justify-between px-3 items-center fixed z-50">
+      <nav className="flex justify-between px-3 items-center z-50 bg-slate-500 h-20">
         <div>
           <Link
             to="Home"
@@ -26,7 +26,7 @@ const Navbar = () => {
             duration={1000}
           >
             <img
-              className="pt-3"
+              className="pt-1"
               src="./assets/images/logobw.svg"
               alt="logoQuentin"
               height="45"
@@ -34,8 +34,8 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="gap-5 flex mb-3 justify-center fixed top-0 left-[50%] right-[25%] translate-x-[-50%] pt-[15px] w-screen z-40">
-          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1">
+        <ul className="gap-5 flex mb-3 justify-center pt-[15px] w-screen z-40">
+          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="About"
               activeClass="active"
@@ -47,7 +47,7 @@ const Navbar = () => {
               ABOUT ME
             </Link>
           </li>
-          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1">
+          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="Project"
               activeClass="active"
@@ -59,7 +59,7 @@ const Navbar = () => {
               PROJECTS
             </Link>
           </li>
-          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1">
+          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="Contact"
               activeClass="active"

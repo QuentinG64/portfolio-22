@@ -17,12 +17,12 @@
   }
 
   .buttonContact {
-    font-size: 2rem;
-    font-family: "Nunito-reg";
-    color: #4ecdc4;
-    border: 2px solid #4ecdc4;
+    font-size: 1.4rem;
+    font-family: "Nunito-light";
+    color: #fff;
+    border: 2px solid #fff;
     display: inline;
-    padding: 0 1rem 0 1rem;
+    padding: 0.7rem 1rem 0.7rem 1rem;
     background: linear-gradient(to left, transparent 50%, #4ecdc4 50%);
     background-size: 200%;
     background-position: right;
@@ -63,37 +63,37 @@
 
 @font-face {
   font-family: "Nunito-Reg";
-  src: url("../public/assets/font/Nunito/Nunito-Regular.ttf");
+  src: url("../public/assets/font/Nunito/Raleway-Regular.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Bold";
-  src: url("../public/assets/font/Nunito/Nunito-Bold.ttf");
+  src: url("../public/assets/font/Nunito/Raleway-Bold.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Xbold";
-  src: url("../public/assets/font/Nunito/Nunito-ExtraBold.ttf");
+  src: url("../public/assets/font/Nunito/Raleway-Black.ttf.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Light";
-  src: url("../public/assets/font/Nunito/Nunito-Light.ttf");
+  src: url("../public/assets/font/Nunito/Raleway-Light.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Xlight";
-  src: url("../public/assets/font/Nunito/Nunito-ExtraLight.ttf");
+  src: url("../public/assets/font/Nunito/Raleway-ExtraLight.ttf");
 }
 
 @font-face {
   font-family: "Nunito-Italic";
-  src: url("../public/assets/font/Nunito/Nunito-Italic.ttf");
+  src: url("../public/assets/font/Nunito/Raleway-Italic.ttf");
 }
 
 @font-face {
-  font-family: "Nunito-Sembold";
-  src: url("../public/assets/font/Nunito/Nunito-SemiBold.ttf");
+  font-family: "Nunito-Semibold";
+  src: url("../public/assets/font/Nunito/Raleway-SemiBold.ttf");
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

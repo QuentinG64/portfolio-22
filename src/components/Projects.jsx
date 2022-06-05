@@ -27,13 +27,13 @@ const Projects = () => {
           />
         </div>
 
-        <div className="text-main-2 text-4xl font-reg pl-4 flex gap-1">
+        <div className="text-main-3 text-4xl font-reg pl-4 flex gap-1">
           <Bounce left cascade>
             <div>SOME </div>
           </Bounce>
           <Bounce right>
             <div>
-              <span className="text-main-1 font-bold text-4xl">PROJECTS.</span>
+              <span className="text-bg-2 font-bold text-4xl">PROJECTS.</span>
             </div>
           </Bounce>
         </div>

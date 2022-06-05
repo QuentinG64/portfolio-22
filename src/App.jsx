@@ -50,7 +50,6 @@ function App() {
         <AboutMe />
         <Projects />
         <Contact />
-        <Footer />
       </div>
     </div>
   );

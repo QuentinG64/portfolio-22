@@ -17,6 +17,7 @@ module.exports = {
         "bg-2": "#4ecdc4",
         "main-1": "#ff6b6b",
         "main-2": "#ffffff",
+        "main-3": "#616161",
         "f-stop": "#0F2027",
         "s-stop": "#203A43",
         "t-stop": "#2C5364",
