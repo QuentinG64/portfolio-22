@@ -6,33 +6,34 @@ import ButtonContact from "./ButtonContact";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
-import Navbar from "./Navbar";
 
 const HomePage = () => {
   return (
     <div name="Home" className="w-screen h-screen bg-bg-1">
       <Footer />
       <div className="flex pt-[15%] justify-center">
-        <div className="text-main-2 text-4xl font-light text-center flex flex-row">
+        <div className="text-main-2 font-light text-center flex flex-row">
           <Bounce left cascade>
-            <div>Hello, I'm </div>
+            <div className="lg:text-4xl sm:text-3xl">Hello, I'm </div>
           </Bounce>
           <Bounce right cascade>
-            <div className="text-main-1 font-reg text-4xl">Quentin.</div>
+            <div className="text-main-1 font-reg lg:text-4xl sm:text-3xl">
+              Quentin.
+            </div>
           </Bounce>
         </div>
       </div>
 
-      <div className="text-main-2 text-6xl font-reg pt-8 flex justify-center flex-col text-center">
+      <div className="text-main-2 font-reg pt-8 flex justify-center flex-col text-center">
         <Fade bottom>
-          <div>
+          <div className="lg:text-6xl md:text-4xl">
             I'm a{" "}
             <span className="text-main-1 font-reg">
               full-stack web developer,
             </span>
           </div>
         </Fade>
-        <div className="text-main-2 font-xlight text-3xl mt-4">
+        <div className="text-main-2 font-xlight lg:text-3xl md:text-2xl mt-4">
           <Typewriter
             options={{
               strings: [

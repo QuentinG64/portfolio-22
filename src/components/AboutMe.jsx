@@ -15,7 +15,7 @@ const AboutMe = () => {
 
   return (
     <div name="About" className="h-screen w-screen pt-6">
-      <div className="flex pt-[5%] items-center flex-col">
+      <div className="flex 2xl:pt-[5%] lg:pt-[7%] md:pt-[10%] items-center flex-col">
         <div className="text-main-3 text-4xl font-reg flex gap-1">
           <Bounce left cascade>
             <div>FEW </div>
@@ -35,16 +35,14 @@ const AboutMe = () => {
           />
         </div>
       </div>
-      <div className="text-main-3 font-xlight text-2xl flex flex-row mt-20">
+      <div className="text-main-3 font-xlight 2xl:text-2xl xl:text-xl flex flex-row mt-20">
         <img
-          className="absolute z-50 ml-24 mt-24"
+          className="absolute z-50 xl:ml-24 lg:ml-16 md:ml-12 mt-24 2xl:h-[300px] 2xl:w-[300px] lg:h-[220px] lg:w-[220px] md:h-[170px] md:w-[170px]"
           src="./assets/images/hero1.png"
-          height="300"
-          width="300"
           alt="heroQuentin"
         />
 
-        <div className="flex-col w-[50%] ml-[656px] text-justify">
+        <div className="flex flex-col w-38 pl-[38.5%] pr-20 text-justify">
           <Reveal>
             <div className="">
               I'm a full-stack web developer, engineer and designer living in

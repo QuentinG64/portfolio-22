@@ -5,12 +5,11 @@ import mySkills from "../data/skillsData";
 import Skill from "./Skill";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
-import Fade from "react-reveal/Fade";
 
 const SkillsTech = ({ change }) => {
   return (
     <div className="h-full w-full mt-12 flex">
-      <div className="w-1/2">
+      <div className="2xl:w-1/2 lg:w-2/3">
         {mySkills
           .filter(({ type }) => type === "dev")
           .map((skill, index) => (
@@ -19,7 +18,7 @@ const SkillsTech = ({ change }) => {
       </div>
       <div>
         <div>
-          <div className="mt-32 pl-48 text-bg-2 w-[100%] flex items-center flex-col text-l">
+          <div className="mt-32 pl-20 text-bg-2 w-[100%] flex items-center flex-col text-l">
             <div className="font-light animate-bounce">↓ Change me ↓</div>
             <Box
               sx={{
