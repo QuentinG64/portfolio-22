@@ -4,8 +4,8 @@ const projectsData = [
     src: "./assets/images/clubSandwich.png",
     width: 4,
     height: 4,
-    url: "#",
-    github: "#",
+    url: "",
+    github: "",
     title: "Full-Stack - Restaurant website",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
