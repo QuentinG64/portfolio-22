@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div name="Home" className="w-screen h-screen bg-bg-1">
       <Footer />
-      <div className="flex pt-[15%] justify-center">
+      <div className="flex lg:pt-[15%] md:pt-[25%] justify-center">
         <div className="text-main-2 font-light text-center flex flex-row">
           <Bounce left cascade>
             <div className="lg:text-4xl sm:text-3xl">Hello, I'm </div>

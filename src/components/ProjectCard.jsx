@@ -16,7 +16,7 @@ const ProjectCard = ({
   github,
 }) => {
   return (
-    <div className=" w-1/2 relative group overflow-hidden">
+    <div className=" lg:w-1/2 md:w-full relative group overflow-hidden">
       <div className="absolute inset-0 z-10 text-center flex flex-col flex-wrap items-center justify-center opacity-0 hover:opacity-100 text-white bg-opacity-90 duration-300 ">
         <h1 className="text-white font-bold text-4xl">{name}</h1>
         <h2 className="text-white font-reg text-2xl">{title}</h2>

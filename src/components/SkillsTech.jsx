@@ -9,7 +9,7 @@ import Box from "@mui/material/Box";
 const SkillsTech = ({ change }) => {
   return (
     <div className="h-full w-full mt-12 flex">
-      <div className="2xl:w-1/2 lg:w-2/3">
+      <div className="2xl:w-1/2 lg:w-2/3 md:w-3/4">
         {mySkills
           .filter(({ type }) => type === "dev")
           .map((skill, index) => (
@@ -18,7 +18,7 @@ const SkillsTech = ({ change }) => {
       </div>
       <div>
         <div>
-          <div className="mt-32 pl-20 text-bg-2 w-[100%] flex items-center flex-col text-l">
+          <div className="xl:mt-32 lg:mt-24 md:mt-20 md:pl-16 xl:pl-32 lg:pl-12 text-bg-2 w-[100%] flex items-center flex-col text-l">
             <div className="font-light animate-bounce">↓ Change me ↓</div>
             <Box
               sx={{

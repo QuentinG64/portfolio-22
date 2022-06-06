@@ -34,7 +34,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="gap-5 flex mb-3 justify-center pt-[15px] w-screen z-40">
+        <ul className="gap-5 flex mb-3 justify-center lg:pl-0 md:ml-8 pt-[15px] w-screen z-40">
           <li className="text-white font-xlight cursor-pointer border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="About"

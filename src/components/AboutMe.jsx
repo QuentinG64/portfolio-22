@@ -42,7 +42,7 @@ const AboutMe = () => {
           alt="heroQuentin"
         />
 
-        <div className="flex flex-col w-38 pl-[38.5%] pr-20 text-justify">
+        <div className="flex flex-col w-38 pl-[38.5%] lg:pr-20 md:pr-20 text-justify">
           <Reveal>
             <div className="">
               I'm a full-stack web developer, engineer and designer living in

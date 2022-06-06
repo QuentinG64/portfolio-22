@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const ButtonProject = ({ naming }) => {
   return (
-    <div className="buttonProject hover:text-main-2 hover:bg-left hover:border-main-1 ease-in-out lg:text-sm 2xl:text-2xl">
+    <div className="buttonProject hover:text-main-2 hover:bg-left hover:border-main-1 ease-in-out md:text-sm 2xl:text-2xl">
       {naming}
     </div>
   );
