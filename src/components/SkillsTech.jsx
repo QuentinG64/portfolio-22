@@ -40,11 +40,8 @@ const SkillsTech = ({ change }) => {
                 <div className="bg-bg-2 text-white">
                   <Button>TECH</Button>
                 </div>
-                <div className="hover:bg-bg-2 hover:text-white">
+                <div className="hover:bg-bg-2 hover:text-white transition-all ease-in duration-300">
                   <Button onClick={change}>DESIGN</Button>
-                </div>
-                <div className="hover:bg-bg-2 hover:text-white">
-                  <Button>OTHER</Button>
                 </div>
               </ButtonGroup>
             </Box>

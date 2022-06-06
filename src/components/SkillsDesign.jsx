@@ -37,14 +37,11 @@ const SkillsDesign = ({ change }) => {
                 color="inherit"
                 size="large"
               >
-                <div className="hover:bg-bg-2 hover:text-white">
+                <div className="hover:bg-bg-2 hover:text-white transition-all ease-in duration-300">
                   <Button onClick={change}>TECH</Button>
                 </div>
                 <div className="bg-bg-2 text-white">
                   <Button>DESIGN</Button>
-                </div>
-                <div className="hover:bg-bg-2 hover:text-white">
-                  <Button>OTHER</Button>
                 </div>
               </ButtonGroup>
             </Box>

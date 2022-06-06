@@ -6,6 +6,7 @@ import ButtonContact from "./ButtonContact";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
+import Navbar from "./Navbar";
 
 const HomePage = () => {
   return (

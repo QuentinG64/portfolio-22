@@ -23,7 +23,7 @@ module.exports = {
         "f-stop": "#0F2027",
         "s-stop": "#203A43",
         "t-stop": "#2C5364",
-        contact: "#1e242c",
+        "contact-form": "#1e242c",
       },
       backgroundImage: {
         homeBg: "url('./assets/images/bg_main.jpeg')",
