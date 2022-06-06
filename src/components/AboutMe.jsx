@@ -1,50 +1,32 @@
 /* eslint-disable */
-import React, { useEffect, useState } from "react";
-import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import Box from "@mui/material/Box";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
-import LoaderAbout from "./LoaderAbout";
-import Footer from "./Footer";
 import Bounce from "react-reveal/Bounce";
 import Reveal from "react-reveal/Reveal";
 import SkillsTech from "./SkillsTech";
 import SkillsDesign from "./SkillsDesign";
 
 const AboutMe = () => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-
-  const navigate = useNavigate();
-  const techSkills = () => {
-    navigate("/aboutme/tech");
-  };
-
-  const designSkills = () => {
-    navigate("/aboutme/design");
-  };
-
   const [skillTech, setSKillTech] = useState(true);
 
   const handleClickSkill = () => {
     setSKillTech(!skillTech);
   };
 
-  return loading ? (
-    <LoaderAbout />
-  ) : (
-    <div name="About" className="h-screen w-screen">
-      <div>
-        <Navbar />
-      </div>
-
-      <div className="flex pt-[5%] items-center">
-        <div>
+  return (
+    <div name="About" className="h-screen w-screen pt-6">
+      <div className="flex pt-[5%] items-center flex-col">
+        <div className="text-main-3 text-4xl font-reg flex gap-1">
+          <Bounce left cascade>
+            <div>FEW </div>
+          </Bounce>
+          <Bounce right>
+            <div>
+              <span className="text-bg-2 font-bold text-4xl">WORDS</span>
+            </div>
+          </Bounce>
+        </div>
+        <div className="mt-2">
           <img
             src="./assets/images/Line2.png"
             height="30"
@@ -52,19 +34,7 @@ const AboutMe = () => {
             alt="lineHome"
           />
         </div>
-
-        <div className="text-main-3 text-4xl font-reg pl-4 flex gap-1">
-          <Bounce left cascade>
-            <div>FEW </div>
-          </Bounce>
-          <Bounce right>
-            <div>
-              <span className="text-bg-1 font-bold text-4xl">WORDS.</span>
-            </div>
-          </Bounce>
-        </div>
       </div>
-
       <div className="text-main-3 font-xlight text-2xl flex flex-row mt-20">
         <img
           className="absolute z-50 ml-24 mt-24"

@@ -44,6 +44,18 @@ const projectsData = [
     stackB: "./assets/images/logoSkills/react-svgrepo-com.svg",
     stackC: "./assets/images/logoSkills/tailwind-svgrepo-com.svg",
   },
+  {
+    name: "Inov Industrie",
+    src: "./assets/images/inov.png",
+    width: 4,
+    height: 4,
+    url: "",
+    github: "",
+    title: "UX/UI - Showcase Industrial Website",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    stackA: "./assets/images/logoSkills/figma-svgrepo-com.svg",
+  },
 ];
 
 export default projectsData;
