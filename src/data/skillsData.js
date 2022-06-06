@@ -26,6 +26,12 @@ const mySkills = [
   },
   {
     type: "dev",
+    name: "Sass",
+    masteryOpposite: "13%",
+    color: "#63B5CF",
+  },
+  {
+    type: "dev",
     name: "ThreeJS",
     masteryOpposite: "35%",
     color: "#CF7763",

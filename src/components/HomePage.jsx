@@ -1,150 +1,44 @@
 /* eslint-disable */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 import Footer from "./Footer";
 import ButtonContact from "./ButtonContact";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
-import LoaderWebsite from "./LoaderWebsite";
 
 const HomePage = () => {
-  const particlesInit = async (main) => {
-    console.log(main);
-    await loadFull(main);
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
-  // const [linked, setLinked] = useState(true);
-
-  // const handleLinked = () => {
-  //   setLinked(!linked);
-  // };
-
   return (
-    <div name="Home" className="w-screen h-screen">
-      <div className="absolute z-[999] bottom-0 right-0 mr-10 mb-10 text-main-1 font-bold"></div>
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          background: {
-            color: {
-              value: "#",
-            },
-          },
-          fpsLimit: 120,
-          interactivity: {
-            events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
-              onHover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
-            },
-            modes: {
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: ["#ffffff", "#333", "#e8c547"],
-            },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: false,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
-              },
-              value: 70,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
-          detectRetina: true,
-        }}
-      />
-      <div className="flex pt-[10%] items-center">
-        <div>
-          <img
-            src="./assets/images/Line1.png"
-            height="30"
-            width="150"
-            alt="lineHome"
-          />
-        </div>
-
-        <div className="text-main-2 text-4xl font-reg pl-4 flex gap-1">
+    <div name="Home" className="w-screen h-screen bg-bg-1">
+      <Footer />
+      <div className="flex pt-[15%] justify-center">
+        <div className="text-main-2 text-4xl font-light text-center flex flex-row">
           <Bounce left cascade>
-            <div>HELLO, I AM </div>
+            <div>Hello, I'm </div>
           </Bounce>
-          <Bounce right>
-            <div>
-              <span className="text-main-1 font-bold text-4xl">QUENTIN.</span>
-            </div>
+          <Bounce right cascade>
+            <div className="text-main-1 font-reg text-4xl">Quentin.</div>
           </Bounce>
         </div>
       </div>
 
-      <div className="text-main-2 text-6xl font-reg pt-28 pl-40">
+      <div className="text-main-2 text-6xl font-reg pt-8 flex justify-center flex-col text-center">
         <Fade bottom>
           <div>
-            I AM A{" "}
-            <span className="text-main-1 font-bold">
-              FULL STACK WEB DEVELOPER,
+            I'm a{" "}
+            <span className="text-main-1 font-reg">
+              full-stack web developer,
             </span>
           </div>
         </Fade>
-        <div className="text-main-2 font-xlight text-3xl">
+        <div className="text-main-2 font-xlight text-3xl mt-4">
           <Typewriter
             options={{
               strings: [
-                "CRAFTING DIGITAL EXPERIENCES.",
-                "MIXING ART WITH CODE.",
-                "EXPLORING BLOCKCHAIN TECH.",
-                "COOKING STUFF ON THE INTERNET.",
+                "cooking stuff on the internet.",
+                "crafting digital experiences.",
+                "in love with intuitive UX/UI.",
+                "mixing art with code.",
               ],
               autoStart: true,
               loop: true,
@@ -152,20 +46,17 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className="mt-5 ml-40">
+      <div className="mt-12 flex justify-center z-[999]">
         <Link
-          to="Contact"
+          to="About"
           activeClass="active"
           spy
           smooth
           isDynamic
           duration={1000}
         >
-          <ButtonContact naming="Code with Q?" />
+          <ButtonContact naming="Learn more" />
         </Link>
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );
