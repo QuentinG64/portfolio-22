@@ -35,6 +35,7 @@ const ContactForm = () => {
   // email submit with EmailJs dependency
   const form = useRef();
   const sendEmail = (e) => {
+    notify();
     e.preventDefault();
 
     emailjs
@@ -55,7 +56,7 @@ const ContactForm = () => {
   };
   return (
     <div name="Contact" className="h-screen w-screen bg-bg-1 pt-6">
-      <div className="flex 2xl:pt-[5%] lg:pt-[7%] items-center flex-col">
+      <div className="flex 2xl:pt-[5%] lg:pt-[7%] md:pt-[10%] items-center flex-col">
         <div className="text-main-3 text-4xl font-reg flex gap-1">
           <Bounce left cascade>
             <div>CODE </div>
@@ -116,7 +117,6 @@ const ContactForm = () => {
             type="submit"
             className="buttonSubmit w-32 hover:text-main-2 hover:bg-left hover:border-bg-2 ease-in-out mt-3 self-center"
             value="Submit"
-            onClick={notify}
           />
         </form>
 
@@ -124,7 +124,7 @@ const ContactForm = () => {
           Your <span className="text-bg-2">message</span> has been sent 🤙🏼
         </div> */}
       </div>
-      <div className="w-full flex justify-center lg:mt-20 2xl:mt-56">
+      <div className="w-full flex justify-center lg:mt-20 2xl:mt-56 md:mt-20">
         <p className="text-xs text-white"> Cooked by</p>
         <img
           src="./assets/images/logobw.svg"
