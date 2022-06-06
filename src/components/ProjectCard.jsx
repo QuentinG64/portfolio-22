@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from "react";
+import ButtonProject from "./ButtonProject";
 
 const ProjectCard = ({
   src,
@@ -39,20 +40,12 @@ const ProjectCard = ({
             <img className="w-12 mx-4 py-5" src={stackF} alt="" />
           </div>
         </div>
-        <div className="mt-1 flex">
-          <a
-            href={url}
-            target="_blank"
-            className="button hover:text-main-1 cursor-pointer"
-          >
-            DEMO
+        <div className="mt-6 flex gap-8 text-sm">
+          <a href={url} target="_blank" className="cursor-pointer">
+            <ButtonProject naming="DEMO" />
           </a>
-          <a
-            href={github}
-            target="_blank"
-            className="button hover:text-main-1 cursor-pointer"
-          >
-            CODE
+          <a href={github} target="_blank" className="cursor-pointer">
+            <ButtonProject naming="CODE" />
           </a>
         </div>
       </div>

@@ -12,12 +12,12 @@ const HomePage = () => {
     <div name="Home" className="w-screen h-screen bg-bg-1">
       <Footer />
       <div className="flex pt-[15%] justify-center">
-        <div className="text-main-2 text-4xl font-light">
+        <div className="text-main-2 text-4xl font-light text-center flex flex-row">
           <Bounce left cascade>
-            <div>
-              Hello, I'm{" "}
-              <span className="text-main-1 font-reg text-4xl">Quentin.</span>
-            </div>
+            <div>Hello, I'm </div>
+          </Bounce>
+          <Bounce right cascade>
+            <div className="text-main-1 font-reg text-4xl">Quentin.</div>
           </Bounce>
         </div>
       </div>
@@ -46,7 +46,7 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className="mt-12 flex justify-center">
+      <div className="mt-12 flex justify-center z-[999]">
         <Link
           to="About"
           activeClass="active"

@@ -15,8 +15,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex justify-between px-3 items-center z-50 bg-slate-500 h-20">
-        <div>
+      <nav className="flex justify-between px-3 items-center z-50 bg-nav-1 h-20">
+        <div className="cursor-pointer">
           <Link
             to="Home"
             activeClass="active"
@@ -35,7 +35,7 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className="gap-5 flex mb-3 justify-center pt-[15px] w-screen z-40">
-          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
+          <li className="text-white font-xlight cursor-pointer border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="About"
               activeClass="active"
@@ -47,7 +47,7 @@ const Navbar = () => {
               ABOUT ME
             </Link>
           </li>
-          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
+          <li className="text-white font-xlight border-2 cursor-pointer rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="Project"
               activeClass="active"
@@ -59,7 +59,7 @@ const Navbar = () => {
               PROJECTS
             </Link>
           </li>
-          <li className="text-white font-xlight border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
+          <li className="text-white font-xlight border-2 cursor-pointer rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="Contact"
               activeClass="active"
@@ -72,6 +72,32 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        <a
+          href="https://github.com/QuentinG64"
+          target="_blank"
+          rel="noreferrer"
+          className="relative px-3"
+        >
+          <img
+            src="./assets/images/Github.png"
+            height="28"
+            width="28"
+            alt="github"
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/quenting64/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="./assets/images/Linkedin.png"
+            height="28"
+            width="28"
+            alt="Linkedin"
+          />
+        </a>
       </nav>
     </div>
   );
