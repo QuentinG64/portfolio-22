@@ -49,7 +49,7 @@ const ProjectCard = ({
           </a>
         </div>
       </div>
-      <div className="relative group-hover:brightness-50 ">
+      <div className="relative group-hover:brightness-50">
         <img
           src={src}
           alt=""
