@@ -15,8 +15,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex justify-between sm:px-1 md:px-3 items-center z-50 bg-nav-1 h-20">
-        <div className="cursor-pointer">
+      <nav className="flex justify-between items-center z-50 bg-nav-1 h-20">
+        <div className="cursor-pointer pl-2">
           <Link
             to="Home"
             activeClass="active"
@@ -74,7 +74,7 @@ const Navbar = () => {
           href="https://github.com/QuentinG64"
           target="_blank"
           rel="noreferrer"
-          className="relative px-3 sm:hidden md:block"
+          className="relative pr-3 sm:hidden md:block"
         >
           <img
             src="./assets/images/Github.png"
@@ -88,7 +88,7 @@ const Navbar = () => {
           href="https://www.linkedin.com/in/quenting64/"
           target="_blank"
           rel="noreferrer"
-          className="sm:hidden md:block"
+          className="relative pr-3 sm:hidden md:block"
         >
           <img
             src="./assets/images/Linkedin.png"
