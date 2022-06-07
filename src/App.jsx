@@ -19,14 +19,16 @@ function App() {
   return loading ? (
     <LoaderWebsite />
   ) : (
-    <div className="h-full w-screen -z-20">
-      <HomePage />
-      <div className="sticky top-0 z-[999] w-screen">
-        <Navbar />
+    <div className="overflow-x-hidden">
+      <div className="h-full w-screen -z-20">
+        <HomePage />
+        <div className="sticky top-0 z-[999] w-screen">
+          <Navbar />
+        </div>
+        <AboutMe />
+        <Projects />
+        <ContactForm />
       </div>
-      <AboutMe />
-      <Projects />
-      <ContactForm />
     </div>
   );
 }
