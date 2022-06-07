@@ -5,7 +5,6 @@ import mySkills from "../data/skillsData";
 import Skill from "./Skill";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
-import Fade from "react-reveal/Fade";
 
 const SkillsDesign = ({ change }) => {
   return (
@@ -19,7 +18,7 @@ const SkillsDesign = ({ change }) => {
       </div>
       <div>
         <div>
-          <div className="xl:mt-32 lg:mt-24 md:mt-20 sm:mt-6 sm:mb-8 md:mb-0 md:items-center md-[294px] xl:pl-32 lg:pl-12 sm:pl-0 text-bg-2 w-[100%] flex items-center flex-col text-l">
+          <div className="xl:mt-32 lg:mt-24 md:mt-12 sm:mt-6 sm:mb-8 md:mb-12 md:items-center md-[294px] xl:pl-32 lg:pl-12 sm:pl-0 text-bg-2 w-[100%] flex items-center flex-col text-l">
             <div className="font-light animate-bounce">↓ Change me ↓</div>
             <Box
               sx={{
