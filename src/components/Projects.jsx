@@ -15,7 +15,7 @@ const Projects = () => {
   return loading ? (
     <LoaderProjects />
   ) : (
-    <div name="Project" className="h-full w-screen bg-main-4 pt-6">
+    <div name="Project" className="h-full w-full bg-main-4 pt-6">
       <div className="flex 2xl:pt-[5%] lg:pt-[7%] md:pt-[10%] sm:pt-[18%] items-center flex-col">
         <div className="text-main-3 text-4xl font-reg flex gap-1">
           <Bounce left cascade>
