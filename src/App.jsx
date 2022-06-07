@@ -24,7 +24,7 @@ function App() {
       {/* <div className="sticky top-0 z-[999] w-screen">
         <Navbar />
       </div> */}
-      <AboutMe />
+      {/* <AboutMe /> */}
       {/* <Projects /> */}
       <ContactForm />
     </div>
