@@ -20,7 +20,7 @@ function App() {
     <LoaderWebsite />
   ) : (
     <div className="h-full w-screen -z-20">
-      <HomePage />
+      {/* <HomePage /> */}
       {/* <div className="sticky top-0 z-[999] w-screen">
         <Navbar />
       </div> */}
