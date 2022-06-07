@@ -55,8 +55,11 @@ const ContactForm = () => {
       );
   };
   return (
-    <div name="Contact" className="h-screen w-screen bg-bg-1 pt-6">
-      <div className="flex 2xl:pt-[5%] lg:pt-[7%] md:pt-[10%] items-center flex-col">
+    <div
+      name="Contact"
+      className="h-screen w-screen bg-bg-1 pt-6 overflow-hidden"
+    >
+      <div className="flex 2xl:pt-[5%] lg:pt-[7%] md:pt-[10%] sm:pt-[18%] items-center flex-col">
         <div className="text-main-3 text-4xl font-reg flex gap-1">
           <Bounce left cascade>
             <div>CODE </div>
@@ -88,7 +91,7 @@ const ContactForm = () => {
         <form
           action=""
           autoComplete="none"
-          className="flex flex-col gap-2 w-[500px] mt-12"
+          className="flex flex-col gap-2 md:w-[500px] sm:w-[300px] mt-12"
           ref={form}
           onSubmit={sendEmail}
         >
@@ -124,7 +127,7 @@ const ContactForm = () => {
           Your <span className="text-bg-2">message</span> has been sent 🤙🏼
         </div> */}
       </div>
-      <div className="w-full flex justify-center lg:mt-20 2xl:mt-56 md:mt-20">
+      <div className="w-full flex justify-center 1xl:pt-56 lg:pt-24 md:pt-96 sm:pt-24">
         <p className="text-xs text-white"> Cooked by</p>
         <img
           src="./assets/images/logobw.svg"

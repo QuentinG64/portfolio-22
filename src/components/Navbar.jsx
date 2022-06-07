@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex justify-between px-3 items-center z-50 bg-nav-1 h-20">
+      <nav className="flex justify-between sm:px-1 md:px-3 items-center z-50 bg-nav-1 h-20">
         <div className="cursor-pointer">
           <Link
             to="Home"
@@ -26,16 +26,14 @@ const Navbar = () => {
             duration={1000}
           >
             <img
-              className="pt-1"
+              className="pt-1 md:h-[45px] md:w-[45px] sm:h-[30px] sm:pl-1 md:pl-0 sm:w-[30px]"
               src="./assets/images/logobw.svg"
               alt="logoQuentin"
-              height="45"
-              width="45"
             />
           </Link>
         </div>
-        <ul className="gap-5 flex mb-3 justify-center lg:pl-0 md:ml-8 pt-[15px] w-screen z-40">
-          <li className="text-white font-xlight cursor-pointer border-2 rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
+        <ul className="md:gap-5 sm:gap-3 flex mb-3 md:text-lg sm:text-[0.9rem] justify-center lg:pl-0 md:ml-7 pt-[15px] w-screen z-40">
+          <li className="text-white font-xlight cursor-pointer border-2 rounded-xl md:px-2 sm:px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="About"
               activeClass="active"
@@ -47,7 +45,7 @@ const Navbar = () => {
               ABOUT ME
             </Link>
           </li>
-          <li className="text-white font-xlight border-2 cursor-pointer rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
+          <li className="text-white font-xlight border-2 cursor-pointer rounded-xl md:px-2 sm:px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="Project"
               activeClass="active"
@@ -59,7 +57,7 @@ const Navbar = () => {
               PROJECTS
             </Link>
           </li>
-          <li className="text-white font-xlight border-2 cursor-pointer rounded-xl px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
+          <li className="text-white font-xlight border-2 cursor-pointer rounded-xl md:px-2 sm:px-2 hover:border-main-1 hover:text-main-1 transition-all ease-in-out duration-300">
             <Link
               to="Contact"
               activeClass="active"
@@ -76,7 +74,7 @@ const Navbar = () => {
           href="https://github.com/QuentinG64"
           target="_blank"
           rel="noreferrer"
-          className="relative px-3"
+          className="relative px-3 sm:hidden md:block"
         >
           <img
             src="./assets/images/Github.png"
@@ -90,6 +88,7 @@ const Navbar = () => {
           href="https://www.linkedin.com/in/quenting64/"
           target="_blank"
           rel="noreferrer"
+          className="sm:hidden md:block"
         >
           <img
             src="./assets/images/Linkedin.png"

@@ -9,8 +9,8 @@ import Fade from "react-reveal/Fade";
 
 const SkillsDesign = ({ change }) => {
   return (
-    <div className="h-full w-full mt-12 flex">
-      <div className="2xl:w-1/2 lg:w-2/3 md:w-3/4">
+    <div className="h-full w-full mt-12 lg:flex md:flex-col lg:flex-row">
+      <div className="2xl:w-1/2 lg:w-2/3">
         {mySkills
           .filter(({ type }) => type === "design")
           .map((skill, index) => (
@@ -19,7 +19,7 @@ const SkillsDesign = ({ change }) => {
       </div>
       <div>
         <div>
-          <div className="xl:mt-32 lg:mt-24 md:mt-20 md:pl-16 xl:pl-32 lg:pl-12 text-bg-2 w-[100%]  flex items-center flex-col text-l">
+          <div className="xl:mt-32 lg:mt-24 md:mt-20 sm:mt-6 sm:mb-8 md:mb-0 md:items-center md-[294px] xl:pl-32 lg:pl-12 sm:pl-0 text-bg-2 w-[100%] flex items-center flex-col text-l">
             <div className="font-light animate-bounce">↓ Change me ↓</div>
             <Box
               sx={{
