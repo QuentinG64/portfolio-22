@@ -127,7 +127,7 @@ const ContactForm = () => {
           Your <span className="text-bg-2">message</span> has been sent 🤙🏼
         </div> */}
       </div>
-      <div className="w-full flex justify-center 2xl:pt-64 1xl:pt-56 lg:pt-24 md:pt-96 sm:pt-24">
+      <div className="w-full flex justify-center 2xl:pt-72 1xl:pt-56 lg:pt-24 md:pt-96 sm:pt-24">
         <p className="text-xs text-white"> Cooked by</p>
         <img
           src="./assets/images/logobw.svg"
