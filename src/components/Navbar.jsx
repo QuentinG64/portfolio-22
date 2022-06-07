@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="w-screen">
-      <nav className="flex justify-between items-center z-50 bg-nav-1 h-20">
+      <nav className="flex justify-between px-2 items-center z-50 bg-nav-1 h-20">
         <div className="cursor-pointer pl-2">
           <Link
             to="Home"
