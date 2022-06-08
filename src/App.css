@@ -23,7 +23,7 @@
     border: 2px solid #fff;
     display: inline;
     padding: 0.7rem 1rem 0.7rem 1rem;
-    background: linear-gradient(to left, transparent 50%, #04c2c9 50%);
+    background: linear-gradient(to left, transparent 50%, #88b7d3 50%);
     background-size: 200%;
     background-position: right;
     cursor: pointer;
@@ -38,7 +38,7 @@
     border: 2px solid #fff;
     display: inline;
     padding: 0.7rem;
-    background: linear-gradient(to left, transparent 50%, #d41c62 50%);
+    background: linear-gradient(to left, transparent 50%, #ee6c4d 50%);
     background-size: 200%;
     background-position: right;
     cursor: pointer;
@@ -52,7 +52,7 @@
     border: 2px solid #fff;
     display: inline;
     padding: 0.7rem 0.4rem 0.7rem 0.4rem;
-    background: linear-gradient(to left, transparent 50%, #04c2c9 50%);
+    background: linear-gradient(to left, transparent 50%, #88b7d3 50%);
     background-size: 200%;
     background-position: right;
     cursor: pointer;
