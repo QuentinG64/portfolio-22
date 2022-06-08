@@ -7,7 +7,9 @@ const LoaderWebsite = () => {
     <div>
       <div className="flex h-screen w-screen justify-center items-center flex-col gap-3 font-bold md:text-xl sm:text-sm text-white bg-bg-1 bg-cover -z-20">
         <div className="flex-row">
-          Q IS CURRENTLY <span className="text-main-1">CRAFTING</span> STUFF...
+          QUENTIN IS CURRENTLY{" "}
+          <span className="text-main-1 md:text-xl sm:text-sm">CRAFTING</span>{" "}
+          STUFF...
         </div>
 
         <Stack sx={{ width: "50%", color: "#D41C62" }} spacing={1}>

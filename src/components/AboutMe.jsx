@@ -21,7 +21,7 @@ const AboutMe = () => {
       <div className="flex 2xl:pt-[5%] lg:pt-[7%] md:pt-[10%] sm:pt-[18%] items-center flex-col">
         <div className="text-main-3 text-4xl font-reg flex gap-1">
           <Bounce left cascade>
-            <div>FEW </div>
+            <div>A FEW </div>
           </Bounce>
           <Bounce right>
             <div>
@@ -49,9 +49,9 @@ const AboutMe = () => {
           <Reveal>
             <div>
               I'm a full-stack web developer, engineer and designer living in
-              the Basque Country. Passionated about interface design, intuitive
+              the Basque Country. Passionate about interface design, intuitive
               and dynamic user experiences, an efficient and maintainable code
-              remain my highest priority.
+              remains my highest priority.
               <div>
                 <div>
                   {skillTech ? (
