@@ -18,29 +18,59 @@ const ProjectCard = ({
   return (
     <div className=" lg:w-1/2 md:w-full relative group overflow-hidden">
       <div className="absolute inset-0 z-10 text-center flex flex-col flex-wrap items-center justify-center opacity-0 hover:opacity-100 text-white bg-opacity-90 duration-300 ">
-        <h1 className="text-white font-bold text-4xl">{name}</h1>
-        <h2 className="text-white font-reg text-2xl">{title}</h2>
-        <div className="gap-3 flex justify-center mx-auto">
+        <h1 className="text-white font-bold md:text-4xl sm:text-1xl">{name}</h1>
+        <h2 className="text-white font-reg md:text-2xl sm:text-lg">{title}</h2>
+        <div className="md:gap-3 sm:gap-1 flex justify-center mx-auto">
           <div>
-            <img className="w-12 mx-3 py-5" src={stackA} alt="" />
+            <img
+              className="md:w-12 sm:w-8 mx-3 md:py-5 sm:py-2"
+              src={stackA}
+              alt=""
+            />
           </div>
           <div className={stackC ? "" : "hidden"}>
-            <img className="w-12 mx-3 py-5" src={stackB} alt="" />
+            <img
+              className="md:w-12 sm:w-8 mx-3 md:py-5 sm:py-2"
+              src={stackB}
+              alt=""
+            />
           </div>
           <div className={stackC ? "" : "hidden"}>
-            <img className="w-12 mx-3 py-5" src={stackC} alt="" />
+            <img
+              className="md:w-12 sm:w-8 mx-3 md:py-5 sm:py-2"
+              src={stackC}
+              alt=""
+            />
           </div>
           <div className={stackD ? "" : "hidden"}>
-            <img className="w-12 mx-3 py-5" src={stackD} alt="" />
+            <img
+              className="md:w-12 sm:w-8 mx-3 md:py-5 sm:py-2"
+              src={stackD}
+              alt=""
+            />
           </div>
           <div className={stackE ? "" : "hidden"}>
-            <img className="w-12 mx-3 py-5" src={stackE} alt="" />
+            <img
+              className="md:w-12 sm:w-8 mx-3 md:py-5 sm:py-2"
+              src={stackE}
+              alt=""
+            />
           </div>
           <div className={stackF ? "" : "hidden"}>
-            <img className="w-12 mx-3 py-5" src={stackF} alt="" />
+            <img
+              className="md:w-12 sm:w-8 mx-3 md:py-5 sm:py-2"
+              src={stackF}
+              alt=""
+            />
           </div>
         </div>
-        <div className={url && github ? "mt-6 flex gap-8 text-sm" : "hidden"}>
+        <div
+          className={
+            url && github
+              ? "md:mt-6 sm:mt-4 flex md:gap-8 sm:gap-4 text-sm"
+              : "hidden"
+          }
+        >
           <a href={url} target="_blank" className="cursor-pointer">
             <ButtonProject naming="DEMO" />
           </a>
