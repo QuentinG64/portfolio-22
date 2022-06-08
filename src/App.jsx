@@ -19,7 +19,7 @@ function App() {
   return loading ? (
     <LoaderWebsite />
   ) : (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-clip">
       <div className="h-full w-screen -z-20">
         <HomePage />
         <div className="sticky top-0 z-[999] w-screen">
