@@ -12,7 +12,7 @@ const LoaderWebsite = () => {
           STUFF...
         </div>
 
-        <Stack sx={{ width: "50%", color: "#D41C62" }} spacing={1}>
+        <Stack sx={{ width: "50%", color: "#ee6c4d" }} spacing={1}>
           <LinearProgress color="inherit" />
         </Stack>
       </div>

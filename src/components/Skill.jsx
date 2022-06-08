@@ -12,7 +12,7 @@ const Skill = ({ name, masteryOpposite, percent }) => {
         <div
           className="h-4 w-full rounded-r-lg mb-1"
           style={{
-            background: `linear-gradient(to left, #0F2027 ${masteryOpposite}, #04C2C9  0%)`,
+            background: `linear-gradient(to left, #0F2027 ${masteryOpposite}, #88b7d3  0%)`,
           }}
         />
         <div className="absolute 2xl:pt-7 lg:pt-5 md:pt-4 sm:pt-4 pl-1 font-reg text-white lg:text-xs md:text-[10px] sm:text-[9px]">

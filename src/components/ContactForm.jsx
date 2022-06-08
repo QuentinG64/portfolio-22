@@ -91,7 +91,7 @@ const ContactForm = () => {
         <form
           action=""
           autoComplete="none"
-          className="flex flex-col gap-2 md:w-[500px] sm:w-[300px] mt-12"
+          className="flex flex-col h-full gap-2 md:w-[500px] sm:w-[300px] mt-12"
           ref={form}
           onSubmit={sendEmail}
         >
