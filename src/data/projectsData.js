@@ -5,7 +5,7 @@ const projectsData = [
     width: 4,
     height: 4,
     url: "https://club-sandwich.co",
-    github: "",
+    github: "https://github.com/QuentinG64/clubSandwichFront",
     title: "Full-Stack - Restaurant website",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
